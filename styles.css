@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: hsl(216, 12%, 8%);
+    user-select: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+.text p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Main Container */
+main
+ {
+    background-color: black;
+    background-image:linear-gradient(hsl(213, 19%, 18%, 0.9), hsla(213, 20%, 18%, 0.5));
+    max-width: 350px;
+    width: 85vw;
+    margin: auto;
+    margin-top: 25vh;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+
+
+/* Round button container */
+.round {
+    height: 46px;
+    width: 46px;
+    border-radius: 35px;
+    background: hsl(213, 19%, 18%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Star Icon */
+.fa-star {
+    color: hsl(25, 97%, 53%);
+}
+
+/* Rating Scores */
+
+.rating-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 25px;
+    color: hsl(217, 12%, 63%);
+}
+
+.score:last-of-type{
+    margin-right: 0;
+}
+
+.score:hover {
+    background: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.clicked {
+    background: hsl(25, 97%, 53%);
+    color: white;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    line-height: 0;
+}
+
+
+/* Submit Button */
+
+.submit-button {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#submit {
+    cursor: pointer;
+    background: hsl(25, 97%, 53%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    outline: none;
+    border: none;
+    width: 95%;
+    border-radius: 25px;
+    height: 46px;
+}
+
+#submit:hover{
+    background: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+/* Thank You State */
+
+.image-container {
+    text-align: center;
+    margin: 15px 0;
+    margin-bottom: 25px;
+}
+
+.final-score {
+    background: hsl(213, 19%, 18%, 0.7);
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    padding: 8px 22px;
+    padding-top: 9px;
+    margin: 15px auto;
+    border-radius: 20px;
+}
+
+.thankYouPage .text {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Media Query for smartphones */
+
+@media screen and (max-width: 450px) {
+    .score {
+        margin-right: 15px;
+    }
+
+}
